@@ -4,7 +4,7 @@
 // See: https://wicg.github.io/background-fetch/
 
 partial interface ServiceWorkerGlobalScope {
-  attribute EventHandler onbackgroundfetched;
+  attribute EventHandler onbackgroundfetchsuccess;
   attribute EventHandler onbackgroundfetchfail;
   attribute EventHandler onbackgroundfetchabort;
   attribute EventHandler onbackgroundfetchclick;

@@ -16,7 +16,7 @@ self.addEventListener('message', event => {
   source.postMessage('ready');
 });
 
-self.addEventListener('backgroundfetched', event => {
+self.addEventListener('backgroundfetchsuccess', event => {
   event.waitUntil(
     event.fetches.values()
       .then(fetches => Promise.all(fetches.map(fetch => getFetchResult(fetch))))
